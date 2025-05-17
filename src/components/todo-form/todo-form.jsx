@@ -14,7 +14,7 @@ export const TodoForm = () => {
       { id: prevTodos.length, label: task, checked: false },
     ]);
 
-    setTask(''); // Clear the input field after adding the task
+    setTask(''); 
   };
 
   const handleKeyUp = (e) => {
