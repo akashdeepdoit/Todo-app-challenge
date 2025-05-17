@@ -11,3 +11,60 @@ body {
   width: 600px;
   margin: auto;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    background-color: #004085;
+    transform: scale(0.95);
+  }
+
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+}
+
+// Styling for completed and incomplete buttons
+.button-completed {
+  @extend .button;
+  background-color: #28a745;
+
+  &:hover {
+    background-color: #218838;
+  }
+
+  &:active {
+    background-color: #1e7e34;
+  }
+}
+
+.button-incomplete {
+  @extend .button;
+  background-color: #ffc107;
+
+  &:hover {
+    background-color: #e0a800;
+  }
+
+  &:active {
+    background-color: #d39e00;
+  }
+}

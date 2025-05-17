@@ -7,7 +7,14 @@ export const TodoForm = () => {
   const [task, setTask] = React.useState('');
 
   const handleAddTodo = () => {
-    // Fix the app to display list of all tasks
+    if (task.trim() === '') return;
+
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      { id: prevTodos.length, label: task, checked: false },
+    ]);
+
+    setTask(''); // Clear the input field after adding the task
   };
 
   const handleKeyUp = (e) => {

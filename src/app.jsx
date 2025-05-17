@@ -68,7 +68,8 @@ export const App = () => {
 
   return (
     <div className="root">
-      <TodosContext.Provider value={{ todos }}>
+      <h1 className="app-heading">To-Do App</h1>
+      <TodosContext.Provider value={{ todos, setTodos }}>
         <TodoList />
         <TodoResults />
         <TodoForm />
