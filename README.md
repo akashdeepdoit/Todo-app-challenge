@@ -27,4 +27,3 @@ This is a React-based To-Do application that allows users to manage their tasks 
 
 ### Additional Features
 - *Task Counter*: Displays the count of completed tasks.
-- *Dynamic Styling*: Tasks marked as completed are styled with a line-through effect.
